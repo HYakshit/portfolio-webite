@@ -1,0 +1,162 @@
+*{
+    
+    margin:0;
+    padding:0;
+}
+/* sidebar */
+.header {
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0/5%);
+}
+.header .navbar{
+padding:5px;
+}
+.header .navbar-nav .nav-link {
+    color: var(black);
+    padding: 0.5rem 1rem;
+    font-weight:600;
+    text-align: centre;
+}
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link:active{
+color: #e84393;
+}
+
+.header .navbar-toggler:focus {
+    box-shadow: none;
+
+}
+/* all */
+.container
+{
+    display:flex;
+}
+.infocontainer
+{
+    height:50vh;
+    width:80vw;
+    margin:144px auto;
+    display:flex;
+    justify-content:space-around;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+P {
+    margin: 0;
+}
+/* pindex || akshit*/
+.devinfo
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.hello{
+font-size:45px;
+} 
+.name{
+
+ font-size:50px;
+
+}
+.about{
+ font-size:40px;
+    
+}
+/* All buttons */
+.buttons button 
+{ 
+    padding:9px 14px;
+    background-color:dodgerblue;
+    border-radius:30px;
+    margin-top: 5px;
+}
+.buttons button a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+.buttons button:hover 
+{
+    transform:scale(1.1);
+    transition:all 0.3s linear;
+}
+.devPic img{
+    height:50vh;
+    border:5px solid;
+    border-color: #e84393;
+    border-radius: 30px;
+}
+/*intro */
+
+.introbox h1{
+    margin-top:40px;
+ text-align: center;
+font-family:monospace;
+font-style: italic;
+font-size:45px;
+}
+.introbox p{
+margin-top:20px;
+ padding:45px;
+text-align: center;
+font-family:serif;
+font-size:30px;
+}
+
+
+/*Skills*/
+
+/* profiles */
+.form .form-control {
+    background-color:rgb(219, 220, 226)
+}
+.form-control{
+margin-top:6px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pclass{
+    height: 100vh;
+}
+.form{
+    width: 50%;
+}
+.profile a{
+   text-decoration:none;
+   height:100px;
+   width:100px;
+   border-radius:50px;
+   text-align:center;
+   line-height:110px;
+   margin:10px;
+   box-shadow:1px 4px 2px 2px #dcdde1;
+}
+.profile a i{
+  transition:all 0.3s linear;
+}
+.profile a:hover i{
+  transform:scale(1.4);
+}
+.fa-instagram{
+    color:#e84393;
+}
+fa-github{
+    color:black;
+}
+.fa-linkedin{
+    color:#0070ac;
+}
+.fa-twitter{
+    color:#0097e6;
+}
+.fa-facebook{
+color:#0097e6;
+}
+
