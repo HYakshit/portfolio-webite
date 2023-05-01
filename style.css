@@ -33,7 +33,6 @@ color: #e84393;
 .infocontainer
 {
     height:50vh;
-    width:80vw;
     margin:144px auto;
     display:flex;
     justify-content:space-around;
