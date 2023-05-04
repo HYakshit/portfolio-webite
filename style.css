@@ -1,14 +1,23 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
 *{
     
     margin:0;
     padding:0;
 }
+:root{
+    --font-base:"Bai Jamjuree";
+}
+
+body{
+    background-color: #022a30;
+    font-family:var(--font-base ),sans-serif;
+}
 /* sidebar */
 .header {
     box-shadow: 0 0.125rem 0.675rem rgb(0 0 0/5%);
-}
-.header .navbar{
-padding:5px;
+
 }
 .header .navbar-nav .nav-link {
     color: var(black);
@@ -25,18 +34,6 @@ color: #e84393;
     box-shadow: none;
 
 }
-/* all */
-.container
-{
-    display:flex;
-}
-.infocontainer
-{
-    height:50vh;
-    margin:144px auto;
-    display:flex;
-    justify-content:space-around;
-}
 a,
 a:hover {
     text-decoration: none;
@@ -45,25 +42,18 @@ a:hover {
 P {
     margin: 0;
 }
-/* pindex || akshit*/
-.devinfo
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+/* content */
+#content{
+    padding-top:60px;
 }
-.hello{
-font-size:45px;
-} 
-.name{
+.full{
+min-height: 100vh;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
 
- font-size:50px;
-
-}
-.about{
- font-size:40px;
-    
-}
 /* All buttons */
 .buttons button 
 { 
@@ -83,31 +73,7 @@ font-size:45px;
     transform:scale(1.1);
     transition:all 0.3s linear;
 }
-.devPic img{
-    height:50vh;
-    border:5px solid;
-    border-color: #e84393;
-    border-radius: 30px;
-}
-/*intro */
 
-.introbox h1{
-    margin-top:40px;
- text-align: center;
-font-family:monospace;
-font-style: italic;
-font-size:45px;
-}
-.introbox p{
-margin-top:20px;
- padding:45px;
-text-align: center;
-font-family:serif;
-font-size:30px;
-}
-
-
-/*Skills*/
 
 /* profiles */
 .form .form-control {
@@ -158,4 +124,9 @@ fa-github{
 .fa-facebook{
 color:#0097e6;
 }
-
+/* Certification */
+.certificate:hover {
+    transform: scale(1.1); /* Magnify the div by 10% */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.2), 0 0 50px rgba(255, 255, 255, 0.1); /* Add a shining effect to the div */
+  }
+  
