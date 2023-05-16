@@ -9,6 +9,8 @@
 :root {
     --font-base: "Bai Jamjuree";
    --color-orange:#b85910;
+   --nav-color:rgb(19, 137, 153);
+   --content:rgb(5, 69, 77);
    --sidebarwidth:250px;
 }
 
@@ -27,13 +29,13 @@ color: var(--color-orange);
         width:var(--sidebarwidth);
         background-size: cover;
         background-position: center;
-        background: linear-gradient(rgba(6, 90, 101, 0.8), rgba(6, 90, 101, 0.8)), url(./images/Sunset.jpg);
+        background: linear-gradient( rgba(13, 141, 158, 0.7), rgba(13, 141, 158, 0.8)), url(./images/Sunset.jpg);
 
     }
 
     #content {
         padding-left:var(--sidebarwidth);
-        background: linear-gradient(rgba(6, 90, 101, 0.8), rgba(6, 90, 101, 0.8));
+        background:var(--content);
     }
     .navbar img {
         width: 100%;
@@ -42,10 +44,10 @@ color: var(--color-orange);
     }
 }
 .navbar{
-    background-color:rgba(6, 90, 101);
+    background-color:var(--nav-color);
 }
 .navbar .nav-link.active{
-color: var(--color-orange);
+color:var(--color-orange);
 }
 
 .header {
@@ -77,7 +79,7 @@ a:hover {
 
 /* content */
 #content{
-    background-color:rgb(8, 67, 75);
+    background-color:var(--content);
 }
 
 .full {
@@ -95,10 +97,52 @@ a:hover {
     border: 7px solid var(--color-orange);
 }
 @media (max-width: 992px){
-#home h2{
-font-size:large;
- 
+#home h1{
+font-size:medium;
+font-weight:500px;
 }}
+
+/* All buttons */
+
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact{
+    background-color:var(--color-orange);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 150px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .contact:hover {
+    /* background-color:rgb(8, 67, 75); */
+    color: #fff;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
 /* Education */
 #education p{
     margin: 0px;
@@ -245,47 +289,5 @@ input::-webkit-inner-spin-button {
     color: #0097e6;
 }
 
-/* All buttons */
 
-
- .button a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
-.contact-me {
-    background-color: #71883e;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 150px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .contact-me:hover {
-    background-color:rgb(8, 67, 75);
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .contact-me:hover {
-    animation: pulse 1s infinite;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(1.1);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
   
