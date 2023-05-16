@@ -10,6 +10,7 @@
     --font-base: "Bai Jamjuree";
    --color-orange:#b85910;
    --nav-color:rgb(19, 137, 153);
+   --namecolor:rgb(199, 212, 110);
    --content:rgb(5, 69, 77);
    --sidebarwidth:250px;
 }
@@ -21,6 +22,9 @@ body {
 .orange{
 color: var(--color-orange);
 }
+.green{
+color: var(--namecolor);
+}
 
 /* navbar */
 @media (min-width: 992px){
@@ -29,7 +33,7 @@ color: var(--color-orange);
         width:var(--sidebarwidth);
         background-size: cover;
         background-position: center;
-        background: linear-gradient( rgba(13, 141, 158, 0.7), rgba(13, 141, 158, 0.8)), url(./images/Sunset.jpg);
+        background: linear-gradient( rgba(13, 141, 158, 0.7), rgba(11, 92, 102, 0.8)), url(./images/Sunset.jpg);
 
     }
 
