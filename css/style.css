@@ -8,9 +8,9 @@
 
 :root {
     --font-base: "Bai Jamjuree";
-   --color-orange:#b85910;
+   --color-orange:#f39419;
    --nav-color:rgb(19, 137, 153);
-   --namecolor:rgb(199, 212, 110);
+   --namecolor:rgb(130, 187, 16);
    --content:rgb(5, 69, 77);
    --sidebarwidth:250px;
 }
@@ -66,8 +66,8 @@ color:var(--color-orange);
     text-align: centre;
 }
 
-.header .navbar-nav .nav-link:hover,
-.header .navbar-nav .nav-link:active {
+.header .navbar-nav .nav-link.hover,
+.header .navbar-nav .nav-link.active {
     color:var(--color-orange);
 }
 

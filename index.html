@@ -26,8 +26,8 @@
                     <a href="#home"><img src="images/Sunset.jpg"
                               class="d-none mx-lg-auto rounded-circle d-lg-block" alt="..."> </a>
                     <a class="navbar-brand text-white d-block d-lg-none" href="pindex.html">Akshit Mahajan</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false"
                          aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,6 +43,15 @@
                </div>
           </nav>
      </div>
+     <script>
+          function closeNavbar() {
+               var navbarToggler = document.querySelector('.navbar-toggler');
+               var navbarCollapse = document.querySelector('.navbar-collapse');
+
+               navbarToggler.classList.add('collapsed');
+               navbarCollapse.classList.remove('show');
+          }
+     </script>
      <!-- content -->
      <section id="content">
           <!-- home -->
@@ -208,16 +217,16 @@
                          </a>
                          <a href="https://www.facebook.com/akshit.mahajan.986" target="_blank">
                               <i class="fa-brands fa-2x fa-facebook"></i> </a>
-                         <a href="https://www.instagram.com/akshit_612/" target="_blank">
+                         <a href=https://www.instagram.com/akshit_612/ target="_blank">
                               <i class="fa-brands fa-2x fa-instagram"></i> </a>
-
 
                     </div>
                     <h4 class="pb-2 mt-4 orange text-center">OR</h4>
                     <div class="form text-center">
                          <h4 class="pb-2 mt-3">Enter your Details</h4>
                          <form action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51" method="POST">
-                              <!-- name -->
+                              <!-- capcha disable -->
+                              <input type="hidden" name="_captcha" value="false">                              <!-- name -->
                               <div class="form-group">
                                    <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
                               </div>
