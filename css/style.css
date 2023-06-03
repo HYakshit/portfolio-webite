@@ -242,6 +242,10 @@ text-align: center;
 
 
 /* profiles */
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+}
 .form input{
 margin-bottom:8px;
 }
