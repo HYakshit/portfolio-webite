@@ -8,10 +8,11 @@
 
 :root {
     --font-base: "Bai Jamjuree";
-   --color-orange:#f39419;
-   --nav-color:rgb(19, 137, 153);
+   --color-orange:#cfde70;
+   /* #f39419; */
+   --mera:#d1e073;
    --namecolor:rgb(130, 187, 16);
-   --content:rgb(5, 69, 77);
+   --content:#00262f;
    --sidebarwidth:250px;
 }
 
@@ -33,7 +34,7 @@ color: var(--namecolor);
         width:var(--sidebarwidth);
         background-size: cover;
         background-position: center;
-        background: linear-gradient( rgba(13, 141, 158, 0.7), rgba(11, 92, 102, 0.8)), url(./images/Sunset.jpg);
+        background: linear-gradient( rgba(12, 99, 110, 0.7), rgba(5, 73, 79, 0.8)), url(./images/Sunset.jpg);
 
     }
 
@@ -48,7 +49,7 @@ color: var(--namecolor);
     }
 }
 .navbar{
-    background-color:var(--nav-color);
+    background:linear-gradient( rgba(12, 99, 110, 0.7), rgba(5, 73, 79, 0.8)), url(./images/Sunset.jpg);
 }
 .navbar .nav-link.active{
 color:var(--color-orange);
@@ -109,7 +110,7 @@ font-weight:500px;
 /* All buttons */
 
 
-.button a {
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -127,7 +128,7 @@ font-weight:500px;
   }
   
   .contact:hover {
-    /* background-color:rgb(8, 67, 75); */
+   background-color:rgb(8, 67, 75); 
     color: #fff;
     animation: pulse 1s infinite;
     cursor: pointer;
