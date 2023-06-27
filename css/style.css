@@ -8,16 +8,19 @@
 
 :root {
     --font-base: "Bai Jamjuree";
-   --color-orange:#cfde70;
-   /* #f39419; */
-   --mera:#d1e073;
+   --color-orange:#a6d8a7;
+   --lclr:#ed9819;
+   --mera:#a6d8a7;
    --namecolor:rgb(130, 187, 16);
-   --content:#00262f;
+    --content:white;
    --sidebarwidth:250px;
 }
-
+.lclr{
+color: var(--lclr);
+}
 body {
    
+   color: black;
     font-family: var(--font-base), sans-serif;
 }
 .orange{
@@ -34,7 +37,7 @@ color: var(--namecolor);
         width:var(--sidebarwidth);
         background-size: cover;
         background-position: center;
-        background: linear-gradient( rgba(12, 99, 110, 0.7), rgba(5, 73, 79, 0.8)), url(./images/Sunset.jpg);
+        background: linear-gradient( #003142, #003140), url(./images/Sunset.jpg);
 
     }
 
@@ -43,13 +46,14 @@ color: var(--namecolor);
         background:var(--content);
     }
     .navbar img {
-        width: 100%;
-        height: 220px;
+        max-width: 100%;
+        height:auto;
         border: 7px solid var(--color-orange);
     }
 }
 .navbar{
-    background:linear-gradient( rgba(12, 99, 110, 0.7), rgba(5, 73, 79, 0.8)), url(./images/Sunset.jpg);
+    background-color:  #00485ced;
+   
 }
 .navbar .nav-link.active{
 color:var(--color-orange);
@@ -109,11 +113,12 @@ font-weight:500px;
 
 /* All buttons */
 
-
-a {
-    text-decoration: none;
+a{
     color: white;
-    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+    color: white !important;
     font-size: 18px;
 }
 /* .contact{
@@ -152,20 +157,16 @@ a {
 #education p{
     margin: 0px;
 }
-#education h2{
-text-align: center;
-}
 #education section {
-    height: 200px;
+ height: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 #education section:hover {
-    transform: translateY(-10px);
+   
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
 }
 /* skills */
 .skills {
@@ -189,12 +190,13 @@ text-align: center;
     transition: all 0.3s ease;
 }
 .skill:hover {
-    transform: translateY(-10px);
+  
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .skill-icon {
     font-size: 40px;
     margin-bottom: 20px;
+    color: var(--lclr);
 }
 .skill-title {
     font-size: 24px;
@@ -219,6 +221,9 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.project-summary:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-img {
@@ -248,7 +253,7 @@ text-align: center;
     flex-wrap: wrap;
 }
 .form input{
-margin-bottom:8px;
+margin-bottom:18px;
 }
 .form .form-control {
     background-color: rgb(209, 209, 209)
