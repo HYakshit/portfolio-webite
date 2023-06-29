@@ -73,7 +73,7 @@
           <!-- About me -->
           <section id="Aboutme" class="full px-lg-3 ">
                <div class="container">
-                    <h2 data-aos="fade-up" class="orange pb-2">About me</h2>
+                    <h2 data-aos="fade-up" class="orange p-3">About me</h2>
                     <div data-aos="fade-right" class="row text-center text-left">
                          <p style="text-align: left;"> I graduated with Bachelor of science in Information
                               Technology in may-2023. During my time at college, I developed Calaculator application in
@@ -88,9 +88,9 @@
                     </div>
                </div>
                <div class="container ">
-                    <h3 data-aos="fade-up" class=" mb-4 pt-3 text-center">You can connect to me through</h3>
+                    <h3 data-aos="fade-up" class="p-3 text-center">You can connect to me through</h3>
 
-                    <div data-aos="fade-right" class="profile justify-content-center  d-flex align-items-center">
+                    <div data-aos="fade-right" class="profile row pb-2 justify-content-center">
                          <a href="https://www.linkedin.com/in/akshit-mahajan-b18b03203/" target="_blank"> <i
                                    class="fa-brands fa-2x fa-linkedin"></i>
                          </a>
@@ -110,9 +110,9 @@
           <!-- Education -->
           <section id="education" class="full px-lg-5 ">
                <div class="container ">
-                    <div class="row pb-4">
+                    <div class="row">
 
-                         <h2 data-aos="fade-up" class="orange">Education</h2>
+                         <h2 data-aos="fade-up" class="p-3 orange">Education</h2>
 
                     </div>
                     <div class="row education">
@@ -152,7 +152,7 @@
           <!-- Skills -->
           <section id="Skills" class="full px-lg-5 ">
                <div class="container">
-                    <h2 data-aos="fade-up" class="orange pt-3 ">My Skills</h2>
+                    <h2 data-aos="fade-up" class="orange p-3 ">My Skills</h2>
                     <div class="skills ">
                          <div data-aos="fade-right" class="skill">
                               <span class="skill-icon "><i class="fab fa-java"></i></span>
@@ -215,30 +215,40 @@
           </section>
           <!-- getintouch -->
           <section id="getintouch" class="full px-lg-5 ">
-               <div class="form">
-                    <div class="orange mb-5">
-                         <h2>Let's talk</h2>
+               <div class="container">
+                    <div class="form">
+                         <div class="orange mb-5">
+                              <h2>Let's talk</h2>
+                         </div>
+                         <h4 class="pb-2 mt-3 text-center">Enter your Details</h4>
+
+                         <form action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51" method="POST">
+                              <!-- capcha disable -->
+                              <input type="hidden" name="_captcha" value="false"> <!-- name -->
+                              <div class="form-group">
+                                   <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
+                              </div>
+                              <!-- E-mail -->
+                              <div class="form-group">
+                                   <input type="text" name="E-mail" class="form-control" placeholder="Your E-mail"
+                                        required>
+                              </div>
+                              <!-- Message-->
+                              <div class="form-group">
+                                   <textarea name="Message" class="form-control" rows="3" placeholder="Your Message"
+                                        required></textarea>
+                              </div>
+                              <div class="text-center"> <button type="submit"
+                                        class="btn mt-2 btn-primary">Submit</button>
+                              </div>
+                         </form>
+
+
+
                     </div>
-                    <h4 class="pb-2 mt-3 text-center">Enter your Details</h4>
-                    <form action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51" method="POST">
-                         <!-- capcha disable -->
-                         <input type="hidden" name="_captcha" value="false"> <!-- name -->
-                         <div class="form-group">
-                              <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
-                         </div>
-                         <!-- E-mail -->
-                         <div class="form-group">
-                              <input type="text" name="E-mail" class="form-control" placeholder="Your E-mail" required>
-                         </div>
-                         <!-- Message-->
-                         <div class="form-group">
-                              <textarea name="Message" class="form-control" rows="3" placeholder="Your Message"
-                                   required></textarea>
-                         </div>
-                         <div class="text-center"> <button type="submit" class="btn mt-2 btn-primary">Submit</button>
-                         </div>
-                    </form>
+
                </div>
+
                </div>
           </section>
      </section>
