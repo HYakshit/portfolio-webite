@@ -29,7 +29,7 @@
                <div class="container-fluid flex-lg-column">
                     <a href="#home"><img src="images/Sunset.jpg" class="d-none mx-lg-auto rounded-circle d-lg-block"
                               alt="..."> </a>
-                    <a class="navbar-brand  d-block  d-lg-none text-white" href="index.html">Akshit Mahajan</a>
+                    <a class="navbar-brand  d-block  d-lg-none text-white" href="#home">Akshit Mahajan</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                          data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false"
                          aria-label="Toggle navigation">
@@ -42,7 +42,6 @@
                               <a class="nav-link" href="#Skills">Skills</a>
                               <a class="nav-link" href="#projects">Projects</a>
                               <a class="nav-link" href="#getintouch">Get in touch</a>
-
                          </div>
                     </div>
                </div>
@@ -58,10 +57,10 @@
                          <div class="col-lg-5 col-6 ">
                               <h2>Hii</h2>
                               <h2>I am </h2>
-                              <h1 data-aos="fade-up" class="lclr">Akshit Mahajan</h1>
-                              <div class="contact button">
-                                   <a href="#getintouch">Contact</a>
-                              </div>
+                              <h1 data-aos="fade-up" class="lclr mb-4">Akshit Mahajan</h1>
+
+                                   <a href="#getintouch" class="link-custom">E-mail</a>
+                              
 
                          </div>
                          <div class="col-sm-5 col-6 ms-lg-4">
@@ -218,9 +217,9 @@
                <div class="container">
                     <div class="form">
                          <div class="orange mb-5">
-                              <h2>Let's talk</h2>
+                              <h2>Get In Touch</h2>
                          </div>
-                         <h4 class="pb-2 mt-3 text-center">Enter your Details</h4>
+                         <h4 class="p-3 text-center">Enter your Details</h4>
 
                          <form action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51" method="POST">
                               <!-- capcha disable -->
@@ -230,12 +229,17 @@
                               </div>
                               <!-- E-mail -->
                               <div class="form-group">
-                                   <input type="text" name="E-mail" class="form-control" placeholder="Your E-mail"
+                                   <input type="email" name="E-mail" class="form-control" placeholder="Your E-mail"
                                         required>
                               </div>
-                              <!-- Message-->
+                              <!-- subject -->
                               <div class="form-group">
-                                   <textarea name="Message" class="form-control" rows="3" placeholder="Your Message"
+                                   <input type="text" name="_subject" class="form-control" placeholder="Enter subject">
+                            
+                              </div>
+                               <!-- Message-->
+                              <div class="form-group">
+                                   <textarea name="Message" class="form-control" rows="3" placeholder="Message"
                                         required></textarea>
                               </div>
                               <div class="text-center"> <button type="submit"

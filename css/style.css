@@ -114,45 +114,33 @@ font-weight:500px;
 /* All buttons */
 
 a{
-    color: white;
+    color:black;
 }
 a:link {
     text-decoration: none;
     color: white !important;
     font-size: 18px;
 }
-/* .contact{
-    background-color:var(--color-orange);
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 150px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .contact:hover {
-   background-color:rgb(8, 67, 75); 
-    color: #fff;
-    animation: pulse 1s infinite;
-    cursor: pointer;
-  }
-  
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(1.1);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  } */
+/* link */
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-orange);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
 /* Education */
 #education p{
     margin: 0px;
