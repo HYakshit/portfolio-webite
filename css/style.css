@@ -48,13 +48,14 @@ color: var(--namecolor);
     .navbar img {
         max-width: 100%;
         height:auto;
-        border: 7px solid var(--color-orange);
+        border: 5px solid var(--color-orange);
     }
 }
 .navbar{
     background-color:  #00485ced;
    
 }
+
 .navbar .nav-link.active{
 color:var(--color-orange);
 }
@@ -75,9 +76,9 @@ color:var(--color-orange);
 .header .navbar-nav .nav-link.active {
     color:var(--color-orange);
 }
-
-.header .navbar-toggler:focus {
+.header .navbar-toggler {
     box-shadow: none;
+    border: none;
 
 }
 a:hover {
@@ -103,7 +104,7 @@ a:hover {
 /* home */
 #home img {
     
-    border: 7px solid var(--color-orange);
+    border: 5px solid var(--color-orange);
 }
 @media (max-width: 992px){
 #home h1{
@@ -175,7 +176,7 @@ a:link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+ 
 }
 .skill:hover {
   
@@ -183,18 +184,16 @@ a:link {
 }
 .skill-icon {
     font-size: 40px;
-    margin-bottom: 20px;
     color: var(--lclr);
 }
 .skill-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .skill-description {
-    font-size: 18px;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
+
 }
 /* Projects */
 
