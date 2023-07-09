@@ -50,6 +50,12 @@ color: var(--namecolor);
         height:auto;
         border: 5px solid var(--color-orange);
     }
+    .footer{
+        background-color: #074b4b !important;
+    }
+    .footer h7{
+        font-size:medium !important;
+        }
 }
 .navbar{
     background-color:  #00485ced;
@@ -293,6 +299,18 @@ input::-webkit-inner-spin-button {
 .fa-facebook {
     color: #0097e6;
 }
+.footer{
+    background-color: #003142;
+    }
+    .footer h6,h5{
+    margin-bottom: 0px;
+    }
+    .footer h7{
+    font-size:xx-small;
+    }
+    .profiles a{
+    margin: 2px;
+    }
 
 
   
