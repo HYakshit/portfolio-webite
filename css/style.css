@@ -176,6 +176,11 @@ a:link {
 }
 
 /* about */
+#Aboutme p {
+color: white;
+font-size: 20px;
+text-align: left;
+}
 .profile {
     display: flex;
 }
@@ -273,7 +278,18 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
+/* resume */
+#resume{
+    font-size:70px;
+    opacity: 0.6;
+    display :flex;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+a{
+color: #e0f780;
+}
 /* footer */
 .footer {
     background-color: #003142;
