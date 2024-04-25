@@ -280,7 +280,7 @@ input::-webkit-inner-spin-button {
 }
 /* resume */
 #resume{
-    font-size:70px;
+font-size:70px;
     opacity: 0.6;
     display :flex;
     position: fixed;
