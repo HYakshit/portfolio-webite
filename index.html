@@ -1,358 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Akshit's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/akshit_sidebar.jpg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta information -->
+    <meta property="og:title" content="Akshit Mahajan's Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my projects and skills in Java, Android development, and more."
+    />
+    <meta property="og:image" content="path/to/social-media-preview.jpg" />
+    <meta property="og:url" content="https://akshit.info" />
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      class="css"
+    />
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 
-<head>
-     <title>Akshit's Portfolio</title>
-     <link rel="icon" type="image/x-icon" href="images/akshit_sidebar.jpg">
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- meta information -->
-     <meta property="og:title" content="Akshit Mahajan's Portfolio">
-     <meta property="og:description" content="Explore my projects and skills in Java, Android development, and more.">
-     <meta property="og:image" content="path/to/social-media-preview.jpg">
-     <meta property="og:url" content="https://akshit.info">
-     <!-- aos -->
-     <link rel="stylesheet" href="css/aos.css">
-     <!-- bootstrap css -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-     <!-- css -->
-     <link rel="stylesheet" href="css/style.css">
-     <!-- icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          class="css">
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navbar -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid flex-lg-column">
+          <a id="sidebar-img" href="#home"
+            ><img
+              src="images/akshit_sidebar.jpg"
+              class="d-none mx-lg-auto rounded-circle d-lg-block"
+              alt="..."
+            />
+          </a>
+          <a
+            class="navbar-brand d-block js-scroll-trigger d-lg-none text-white"
+            href="#home"
+            >Akshit Mahajan</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse mt-lg-4 navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav flex-lg-column text-center">
+              <a class="nav-link js-scroll-trigger" href="#Aboutme">About</a>
+              <a class="nav-link js-scroll-trigger" href="#education"
+                >Education</a
+              >
+              <a class="nav-link js-scroll-trigger" href="#Skills">Skills</a>
+              <a class="nav-link js-scroll-trigger" href="#projects"
+                >Projects</a
+              >
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- content -->
+    <section id="content">
+      <!-- home -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-5">
+              <h2>Hii</h2>
+              <h2>I Am</h2>
+              <h1 class="orange mb-4">Akshit</h1>
+              <a href="#contact" class="link-custom"
+                ><i class="fa-solid fa-link"></i> Email</a
+              >
+            </div>
+            <div class="col-7">
+              <img
+                src="images/home.gif"
+                class="img-fluid rounded-circle"
+                alt="..."
+                width="480"
+                height="360"
+                fetchpriorty="high"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About me -->
+      <section id="Aboutme" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <h5 data-aos="fade-up" class="text-brand">About me</h5>
+            <div data-aos="fade-up" class="row text-center text-left">
+              <p>
+                I graduated with Bachelor of Science in Information Technology
+                in May 2023. During my time at college, I developed a Calculator
+                application in Java using Android Studio. I have also created
+                the front-end of an E-commerce website using Bootstrap. I am
+                proficient in Java, Python, and C++ programming languages. I am
+                eager to apply my skills and knowledge to a career in IT, where
+                I can make a meaningful contribution to the organization's
+                success.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <h3 data-aos="fade-up" class="p-3 text-center">
+              You can connect to me through
+            </h3>
+            <div class="profile row pb-2 justify-content-center">
+              <a
+                class="bg-base"
+                data-aos="fade-up"
+                data-aos-delay=""
+                href="https://www.linkedin.com/in/akshit-mahajan-b18b03203/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-linkedin"></i>
+              </a>
+              <a
+                class="bg-base"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                href="https://twitter.com/Hlo_Akshit"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-twitter"></i>
+              </a>
+              <a
+                class="bg-base"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                href="https://github.com/HYakshit"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-github"></i>
+              </a>
+              <a
+                class="bg-base"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                href="https://www.facebook.com/akshit.mahajan.986"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-facebook"></i>
+              </a>
+              <a
+                class="bg-base"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                href="https://www.instagram.com/akshit_612/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section id="education" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h5 class="text-brand">Education</h5>
+              <h2>My Education & Experience</h2>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h4>Bsc(IT)</h4>
+                <p class="text-brand mb-2">
+                  Guru Nanak Dev University Amritsar(2020 - 2023)
+                </p>
+                <p class="mb-0">Division: First</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h4>Senior Secondary</h4>
+                <p class="text-brand mb-2">
+                  Ajit Vidyalaya SEN SEC School (2019 - 2020)
+                </p>
+                <p class="mb-0">Percentage: 75%</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h4>Matric</h4>
+                <p class="text-brand mb-2">
+                  Ajit Vidyalaya SEN SEC School (2017 - 2018)
+                </p>
+                <p class="mb-0">Percentage: 70%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="Skills" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h5 class="text-brand">Skills</h5>
+              <h2>My skills are</h2>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <div class="skill-title pb-2">Java</div>
+                <p class="skill-description">
+                  I am proficient in Java programming language and can develop
+                  applications.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-title pb-2">Python</div>
+                <p class="skill-description">
+                  I have working knowledge of Python programming language.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon">
+                  <i class="fa-solid fa-sitemap"></i>
+                </div>
+                <div class="skill-title pb-2">DSA</div>
+                <p class="skill-description">
+                  I have good understanding of arrays, linked lists, stacks,
+                  queues, trees.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                <div class="skill-title pb-2">Bootstrap</div>
+                <p class="skill-description">
+                  I have experience in using Bootstrap to create responsive and
+                  beautiful websites.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon"><i class="fab fa-android"></i></div>
+                <div class="skill-title pb-2">Android</div>
+                <p class="skill-description">
+                  I have experience in creating mobile applications using
+                  Android Studio.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <div class="skill-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="skill-title pb-2">SQL</div>
+                <p class="skill-description">
+                  I have developed file shairing website powered with SQL
+                  language.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h5 class="text-brand">Projects</h5>
+              <h2>MY recent projects</h2>
+            </div>
+          </div>
+          <div class="row gy-4 justify-content-center">
+            <div class="col col-md-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <img
+                  src="images/project1.png"
+                  class="img-fluid project-img"
+                  alt="Calculator Application"
+                  width="292"
+                  height="292"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 class="project-title mt-1">Calculator Application</h3>
+                <p class="project-description">
+                  Calculator application in java using Android Studio IDE.
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/11UPpL1JoOwU6YGJ-3IvQ-JsJiLaAiKkj/view?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-primary project-link"
+                  ><i class="fa-brands fa-github"></i> View Project</a
+                >
+              </div>
+            </div>
+            <div class="col col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
+                <img
+                  src="images/project2.jpg"
+                  class="img-fluid project-img"
+                  alt="E-Commerce website"
+                  width="292"
+                  height="292"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 class="project-title mt-1">E-Commerce website</h3>
+                <p class="project-description">
+                  Front-end of E-commerce website using bootstrap
+                </p>
+                <a
+                  href="https://github.com/HYakshit/"
+                  class="btn btn-primary project-link"
+                  ><i class="fa-brands fa-github"></i> View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact-->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h5 class="text-brand">Contact</h5>
+              <h2>Get in touch</h2>
+            </div>
+          </div>
+          <h4 class="p-3 text-center">Enter your Details</h4>
+          <!-- form -->
+          <form
+            class="form"
+            action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51"
+            method="POST"
+          >
+            <!-- capcha disable -->
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- name -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="Name"
+                class="form-control"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <!-- E-mail -->
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control"
+                placeholder="Your E-mail"
+                required
+              />
+            </div>
+            <!-- subject -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="_subject"
+                class="form-control"
+                placeholder="Enter subject"
+              />
+            </div>
+            <!-- Message-->
+            <div class="form-group">
+              <textarea
+                name="Message"
+                class="form-control"
+                rows="3"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn mt-2 btn-primary">
+                Submit <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- resume -->
+      <a
+        href="assets/Akshit_resume.pdf"
+        download="Akshit_Resume.pdf"
+        id="resume"
+        ><i class="fa-solid fa-file"></i
+      ></a>
 
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-     <!-- Navbar -->
-     <div class="header ">
-          <nav class="navbar navbar-expand-lg fixed-top">
-               <div class="container-fluid flex-lg-column">
-                    <a id="sidebar-img" href="#home"><img src="images/akshit_sidebar.jpg"
-                              class="d-none mx-lg-auto rounded-circle d-lg-block" alt="..."> </a>
-                    <a class="navbar-brand d-block js-scroll-trigger d-lg-none text-white" href="#home">Akshit
-                         Mahajan</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                         data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse mt-lg-4 navbar-collapse " id="navbarNavAltMarkup">
-                         <div class="navbar-nav flex-lg-column text-center ">
-                              <a class="nav-link js-scroll-trigger" href="#Aboutme">About</a>
-                              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                              <a class="nav-link js-scroll-trigger" href="#Skills">Skills</a>
-                              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                         </div>
-                    </div>
-               </div>
-          </nav>
-     </div>
-     <!-- content -->
-     <section id="content">
-          <!-- home -->
-          <section id="home" class="full-height px-lg-5 ">
-               <div class="container">
-                    <div class="row align-items-center">
-                         <div class="col-md-5 col-5 ">
-                              <h2>Hii</h2>
-                              <h2>I Am</h2>
-                              <h1 data-aos="fade-up" class="orange mb-4">Akshit</h1>
-                              <a href="#contact" class="link-custom"><i class="fa-solid fa-link"></i> Email</a>
-                         </div>
-                         <div class="col-7 ">
-                              <img src="images/home.gif" class="img-fluid rounded-circle" alt="...">
-                         </div>
-                    </div>
-               </div>
-          </section>
-          <!-- About me -->
-          <section id="Aboutme" class="full-height px-lg-5">
-               <div class="container">
-                    <div class="row">
-                         <h6 data-aos="fade-up" class="text-brand">About me</h6>
-                         <div data-aos="fade-up" class="row text-center text-left">
-                              <p>
-                                   I graduated with Bachelor of Science in Information Technology in May 2023. During my
-                                   time at college, I developed a Calculator application in Java using Android Studio. I
-                                   have
-                                   also created the front-end of an E-commerce website using Bootstrap. I am proficient
-                                   in
-                                   Java, Python, and C++ programming languages. I am eager to apply my skills and
-                                   knowledge
-                                   to a career in IT, where I can make a meaningful contribution to the organization's
-                                   success.
-                              </p>
-                         </div>
-                    </div>
-                    <div class="row">
-                         <h3 data-aos="fade-up" class="p-3 text-center">You can connect to me through</h3>
-                         <div class="profile row pb-2 justify-content-center">
-                              <a class="bg-base" data-aos="fade-up" data-aos-delay=""
-                                   href="https://www.linkedin.com/in/akshit-mahajan-b18b03203/" target="_blank"> <i
-                                        class="fa-brands fa-2x fa-linkedin"></i>
-                              </a>
-                              <a class="bg-base" data-aos="fade-up" data-aos-delay="200"
-                                   href="https://twitter.com/Hlo_Akshit" target="_blank"> <i
-                                        class="fa-brands fa-2x fa-twitter"></i>
-                              </a>
-                              <a class="bg-base" data-aos="fade-up" data-aos-delay="400"
-                                   href="https://github.com/HYakshit" target="_blank">
-                                   <i class="fa-brands fa-2x fa-github"></i>
-                              </a>
-                              <a class="bg-base" data-aos="fade-up" data-aos-delay="600"
-                                   href="https://www.facebook.com/akshit.mahajan.986" target="_blank">
-                                   <i class="fa-brands fa-2x fa-facebook"></i> </a>
-                              <a class="bg-base" data-aos="fade-up" data-aos-delay="800"
-                                   href=https://www.instagram.com/akshit_612/ target="_blank">
-                                   <i class="fa-brands fa-2x fa-instagram"></i> </a>
-
-                         </div>
-                    </div>
-               </div>
-          </section>
-          <!-- Education -->
-          <section id="education" class="full-height px-lg-5">
-               <div class="container">
-                    <div class="row pb-4" data-aos="fade-up">
-                         <div class="col-lg-8">
-                              <h6 class="text-brand">Education</h6>
-                              <h1>My Education & Experience</h1>
-                         </div>
-                    </div>
-                    <div class="row gy-4">
-                         <div class="col-md-4" data-aos="fade-up">
-                              <div class="bg-base p-4 rounded-4 shadow-effect">
-                                   <h4>Bsc(IT)</h4>
-                                   <p class="text-brand mb-2">Guru Nanak Dev University Amritsar(2020 - 2023)</p>
-                                   <p class="mb-0">Division: First</p>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                              <div class="bg-base p-4 rounded-4 shadow-effect">
-                                   <h4>Senior Secondary</h4>
-                                   <p class="text-brand mb-2">Ajit Vidyalaya SEN SEC School (2019 - 2020)</p>
-                                   <p class="mb-0">Percentage: 75%</p>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                              <div class="bg-base p-4 rounded-4 shadow-effect">
-                                   <h4>Matric</h4>
-                                   <p class="text-brand mb-2">Ajit Vidyalaya SEN SEC School (2017 - 2018)</p>
-                                   <p class="mb-0">Percentage: 70%</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </section>
-          <!-- Skills -->
-          <section id="Skills" class="full-height px-lg-5 ">
-               <div class="container">
-                    <div class="row" data-aos="fade-up">
-                         <div class="col-lg-8">
-                              <h6 class="text-brand">Skills</h6>
-                              <h1>My skills are</h1>
-                         </div>
-                    </div>
-                    <div class="row gy-4">
-                         <div class="col-md-4" data-aos="fade-up data-aos-delay=">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fab fa-java"></i></div>
-                                   <div class="skill-title  pb-2">Java</div>
-                                   <span class="skill-description">I am proficient in Java programming language and
-                                        can
-                                        develop applications.</span>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                   <div class="skill-title  pb-2">Python</div>
-                                   <span class="skill-description">I have working knowledge of Python programming
-                                        language.</span>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
-                                   <div class="skill-title  pb-2">DSA</div>
-                                   <span class="skill-description">
-                                        I have good understanding of arrays, linked lists, stacks,
-                                        queues, trees.</span>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
-                                   <div class="skill-title  pb-2">Bootstrap</div>
-                                   <span class="skill-description">I have experience in using Bootstrap to create
-                                        responsive
-                                        and beautiful websites.</span>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fab fa-android"></i></div>
-                                   <div class="skill-title  pb-2">Android</div>
-                                   <span class="skill-description">I have experience in creating mobile
-                                        applications using
-                                        Android Studio.</span>
-                              </div>
-                         </div>
-                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
-                                   <div class="skill-title  pb-2">SQL</div>
-                                   <span class="skill-description">I have developed file shairing website powered with
-                                        SQL language.</span>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </section>
-          <!-- Projects -->
-          <section id="projects" class="full-height px-lg-5">
-               <div class="container ">
-                    <div class="row" data-aos="fade-up">
-                         <div class="col-lg-8">
-                              <h6 class="text-brand">Projects</h6>
-                              <h1>MY recent projects</h1>
-                         </div>
-                    </div>
-                    <div class="row gy-4 justify-content-center">
-                         <div class="col col-md-4" data-aos="fade-up" data-aos-delay="">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <img src="images/project1.png" class="img-fluid project-img" alt="...">
-                                   <h3 class="project-title mt-1">Calculator Application</h3>
-                                   <p class="project-description">Calculator application in java using Android Studio
-                                        IDE. </p>
-                                   <a href="https://drive.google.com/file/d/11UPpL1JoOwU6YGJ-3IvQ-JsJiLaAiKkj/view?usp=drive_link" target="_blank"
-                                        class="btn btn-primary project-link"><i class="fa-brands fa-github"></i> View
-                                        Project</a>
-                              </div>
-                         </div>
-                         <div class="col col-md-4" data-aos="fade-up" data-aos-delay="">
-                              <div class="bg-base p-4 text-center rounded-4 shadow-effect">
-                                   <img src="images/project2.jpg" class="img-fluid project-img" alt="...">
-                                   <h3 class="project-title mt-1">E-Commerce website</h3>
-                                   <p class="project-description">Front-end of E-commerce website using bootstrap</p>
-                                   <a href="https://github.com/HYakshit/" class="btn btn-primary project-link"><i
-                                             class="fa-brands fa-github"></i> View Project</a>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </section>
-          <!-- Contact-->
-          <section id="contact" class="full-height px-lg-5 ">
-               <div class="container">
-                    <div class="row pb-4" data-aos="fade-up">
-                         <div class="col-lg-8">
-                              <h6 class="text-brand">Contact</h6>
-                              <h1>Get in touch</h1>
-                         </div>
-                    </div>
-                    <h4 class="p-3 text-center">Enter your Details</h4>
-                    <!-- form -->
-                    <form class="form" action="https://formsubmit.co/5c45749774e0042ea8344ce9e4248d51" method="POST">
-                         <!-- capcha disable -->
-                         <input type="hidden" name="_captcha" value="false">
-                         <!-- name -->
-                         <div class="form-group">
-                              <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
-                         </div>
-                         <!-- E-mail -->
-                         <div class="form-group">
-                              <input type="email" name="E-mail" class="form-control" placeholder="Your E-mail" required>
-                         </div>
-                         <!-- subject -->
-                         <div class="form-group">
-                              <input type="text" name="_subject" class="form-control" placeholder="Enter subject">
-                         </div>
-                         <!-- Message-->
-                         <div class="form-group">
-                              <textarea name="Message" class="form-control" rows="3" placeholder="Message"
-                                   required></textarea>
-                         </div>
-                         <div class="text-center"> <button type="submit" class="btn mt-2 btn-primary">Submit <i
-                                        class="fa-solid fa-paper-plane"></i></button>
-                         </div>
-                    </form>
-               </div>
-          </section>
-          <!-- resume -->
-          <a href="assets/Akshit_resume.pdf" download="Akshit_Resume.pdf" id="resume"><i
-                    class="fa-solid fa-file"></i></a>
-
-          <!-- footer -->
-          <footer class="footer">
-               <div class="container ">
-                    <div class="profiles">
-                         <h5 class="orange pt-2">Reach to me</h5>
-                         <a href="https://www.linkedin.com/in/akshit-mahajan-b18b03203/" target="_blank"> <i
-                                   class="fa-brands fa-2x fa-linkedin"></i>
-                         </a>
-                         <a href="https://twitter.com/Hlo_Akshit" target="_blank"> <i
-                                   class="fa-brands fa-2x fa-twitter"></i>
-                         </a>
-                         <a href="https://github.com/HYakshit" target="_blank"> <i
-                                   class="fa-brands fa-2x fa-github"></i>
-                         </a>
-                         <a href="https://www.facebook.com/akshit.mahajan.986" target="_blank">
-                              <i class="fa-brands fa-2x fa-facebook"></i> </a>
-                         <a href=https://www.instagram.com/akshit_612/ target="_blank">
-                              <i class="fa-brands fa-2x fa-instagram"></i> </a>
-
-                    </div>
-                    <div class="email">
-                         <h5 class="mt-3 orange">E-mail</h5>
-                         <a href="mailto:akshit628325@gmail.com" target="_blank">
-                             <h6>akshit628325@gmail.com</h6>
-                         </a>
-                     </div>
-                    <div class="copyright mt-2 text-white text-center">
-                         <h7>© 2023-present. Akshit's Portfolio. All rights reserved.</h7>
-                    </div>
-               </div>
-          </footer>
-     </section>
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <!-- aos -->
-     <script src="js/aos.js"></script>
-     <!-- javascript -->
-     <script src="js/java.js"></script>
-     <!-- bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-     <!--  Script -->
-     <script type="text/javascript">
-          $(document).ready(function () {
-               // Function to remove sidebar image on phones
-               function removeSidebarImageOnPhone() {
-                    var screenWidth = $(window).width();
-                    if (screenWidth <= 768) {
-                         $('#sidebar-img').remove();
-                    }
-
-               }
-               // Call the function on document ready and window resize
-               removeSidebarImageOnPhone();
-               $(window).resize(removeSidebarImageOnPhone);
-          });
-          document.onclick = function () {
-
-               $('.navbar-collapse').collapse('hide');
-
-          };
-          $('.js-scroll-trigger').click(function () {
-
-               $('.navbar-collapse').collapse('hide');
-          });
-     </script>
-</body>
-
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="profiles">
+            <h5 class="orange pt-2">Reach to me</h5>
+            <a
+              href="https://www.linkedin.com/in/akshit-mahajan-b18b03203/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-2x fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/Hlo_Akshit" target="_blank">
+              <i class="fa-brands fa-2x fa-twitter"></i>
+            </a>
+            <a href="https://github.com/HYakshit" target="_blank">
+              <i class="fa-brands fa-2x fa-github"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/akshit.mahajan.986"
+              target="_blank"
+            >
+              <i class="fa-brands fa-2x fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/akshit_612/" target="_blank">
+              <i class="fa-brands fa-2x fa-instagram"></i>
+            </a>
+          </div>
+          <div class="email">
+            <h5 class="mt-3 orange">E-mail</h5>
+            <a
+              href="mailto:akshit628325@gmail.com"
+              target="_blank"
+              class="email-link"
+            >
+              akshit628325@gmail.com
+            </a>
+          </div>
+          <div class="copyright mt-2 text-white text-center">
+            <span class="copyright-text"
+              >© 2023-2024. Akshit's Portfolio. All rights reserved.</span
+            >
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos -->
+    <script src="js/aos.js" defer></script>
+    <!-- javascript -->
+    <script src="js/java.js" defer></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--  Script -->
+    <script type="text/javascript" defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        $(document).ready(function () {
+          // Function to remove sidebar image on phones
+          function removeSidebarImageOnPhone() {
+            var screenWidth = $(window).width();
+            if (screenWidth <= 768) {
+              $("#sidebar-img").remove();
+            }
+          }
+          // Call the function on document ready and window resize
+          removeSidebarImageOnPhone();
+          $(window).resize(removeSidebarImageOnPhone);
+        });
+        document.onclick = function () {
+          $(".navbar-collapse").collapse("hide");
+        };
+        $(".js-scroll-trigger").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
+  </body>
 </html>
