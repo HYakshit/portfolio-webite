@@ -61,6 +61,16 @@ h5 {
 p {
   font-size: 22px;
 }
+.time-line::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -6px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--color-heading);
+  /* border: 2px solid var(--accent-blue); */
+}
 .text-brand {
   color: var(--color-brand);
 }
@@ -260,6 +270,9 @@ a:link {
 }
 
 /* Education */
+.education .edu-box {
+  min-height: 195px;
+}
 
 /* skills */
 .Skills .skill-list {
@@ -311,19 +324,20 @@ a:link {
 .project-img {
   border-radius: 5px;
 }
-
+.project-box{
+  min-height: 530px;
+}
 .project-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .project-description {
-  line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .project-link {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* contact */
