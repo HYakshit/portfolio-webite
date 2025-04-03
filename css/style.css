@@ -142,7 +142,7 @@ p {
 
 .header .navbar-nav .nav-link:hover,
 .header .navbar-nav .nav-link.active {
-  color: var(--color-brand);
+  color: white;
 }
 
 .header .navbar-toggler {
