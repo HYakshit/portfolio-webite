@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* All */
 * {
@@ -41,6 +42,12 @@ h6 {
 }
 h1 {
   color: var(--color-heading);
+
+}
+h2{
+      font-family: "Pacifico", capital !important;
+  font-weight: 400;
+  font-style: normal;
 }
 h3 {
   color: var(--sub-heading);
@@ -289,11 +296,6 @@ a:link {
 .Skills{
   overflow: hidden;
 }
-.Skills .skill-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
 
 .Skills .skill-box {
   width: 140px;
@@ -317,7 +319,7 @@ a:link {
 }
 
 .skill-title {
-  margin-top: 18px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -330,12 +332,12 @@ a:link {
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 992px) {
   .skill-list {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0fr)); 
   }
 }
 @media (max-width: 720px) {
