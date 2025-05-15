@@ -26,7 +26,7 @@
   --navbar-mobile: #faf3e0;
 }
 body {
-  background: linear-gradient(to right, #c19a6b, #8d6e63);
+  background: linear-gradient(to right, #c19a6b, #957569);
   color: var(--color-body);
   font-family: var(--font-base), sans-serif;
 }
@@ -37,22 +37,44 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 h1 {
   color: var(--color-heading);
 }
-h2 {
+h3 {
   color: var(--sub-heading);
   font-size: 26px;
 }
-h5 {
+.heading {
   color: var(--color-heading);
-  font-size: 40px !important;
 }
 p {
   font-size: 22px;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+}
+
 .time-line::after {
   content: "";
   position: absolute;
@@ -74,16 +96,23 @@ p {
 .navbar-toggler-icon {
   color: var(--color-body) !important;
 }
+
+.navbar img {
+  display: none;
+}
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: var(--sidebarwidth);
+
+    /* Background settings */
+    background-image: url("/images/navbar-background.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+
+    /* Optional fallback background color */
     background-color: var(--navbar);
-    background: linear-gradient(var(--navbar), var(--card-color)),
-      url(/images/navbar-background.webp);
   }
 
   #content {
@@ -91,6 +120,7 @@ p {
   }
 
   .navbar img {
+    display: block !important;
     max-width: 100%;
     height: auto;
     border: 5px solid var(--color-border);
@@ -99,13 +129,8 @@ p {
   .footer {
     background-color: var(--footer-bg);
   }
-
-  .footer h7 {
-    font-size: medium !important;
-  }
   .header .navbar-nav .nav-link {
     color: #ede0d4 !important;
-    font-weight: 600;
     text-transform: uppercase;
     text-align: centre;
   }
@@ -183,7 +208,6 @@ a {
 a:link {
   text-decoration: none;
   color: white;
-  font-size: 18px;
 }
 
 .link-custom {
@@ -267,24 +291,30 @@ a:link {
   justify-content: center;
   padding-bottom: 20px;
 }
+
 .Skills .skill-box {
-  background-color: var(--card-color);
   width: 140px;
   height: 140px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 40%;
-  margin-inline: 8px;
+}
+.cup-img {
+  width: 140px;
+  z-index: 0;
+  position: absolute;
+  top: -26px;
 }
 .skill-icon {
   font-size: 30px;
+  z-index: 1;
   color: var(--orange);
 }
 
 .skill-title {
+  margin-top: 18px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -295,12 +325,18 @@ a:link {
 }
 @media (max-width: 720px) {
   .skill-title {
-    font-size: 14px;
+    font-size: 15px;
   }
-  .Skills .skill-box {
-    margin-top: 5px;
-    width: 80px;
-    height: 80px;
+  .skill-icon {
+    font-size: 25px;
+    z-index: 1;
+    color: var(--orange);
+  }
+  .cup-img {
+    width: 120px;
+    z-index: 0;
+    position: absolute;
+    top: -12px;
   }
   .Skills .skill-list {
     justify-content: start;
@@ -362,15 +398,31 @@ input::-webkit-inner-spin-button {
   background-color: var(--footer-bg);
   color: var(--sub-heading);
 }
+.footer .profiles,
+.footer .email,
+.footer-nav {
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .footer .profiles,
+  .footer .email,
+  .footer-nav {
+    text-align: start;
+  }
+}
 .footer a {
   color: var(--sub-heading);
 }
 .footer h5 {
   margin-bottom: 0px;
 }
-
-.footer h7 {
-  font-size: xx-small;
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-
-
+.footer-links a:hover {
+  color: var(--color-border);
+}
