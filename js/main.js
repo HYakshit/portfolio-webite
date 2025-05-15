@@ -17,7 +17,7 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-
+console.log("Owl Carousel initialized");
 const startYear = 2023;
 const currentYear = new Date().getFullYear();
 const yearRange =
