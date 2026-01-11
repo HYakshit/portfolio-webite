@@ -226,7 +226,7 @@ a:hover {
 
 /* home */
 #home img {
-  border: 5px solid var(--color-border);
+  border: 3px solid var(--color-heading);
 }
 
 a {
