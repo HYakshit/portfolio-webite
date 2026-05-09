@@ -92,21 +92,6 @@
     />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-    <!-- owl -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -465,10 +450,8 @@
                   loading="lazy"
                   decoding="async"
                 />
-                <div class="skill-icon">
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="skill-title">SQL</div>
+             <div class="skill-icon"><img src="./assets/icons/sql.svg" alt="PHP"></div>
+                  <div class="skill-title">SQL</div>
               </div>
               <div class="skill-box">
                 <img
@@ -505,7 +488,7 @@
                   decoding="async"
                 />
                 <div class="skill-icon">
-                  <i class="fa-solid fa-star"></i>
+                  <img src="./assets/icons/json.svg" alt="Java">
                 </div>
                 <div class="skill-title">JSON</div>
               </div>
@@ -588,6 +571,19 @@
                   <img src="./assets/icons/github-original.svg" alt="Git/Github">
                 </div>
                 <div class="skill-title">Git/Github</div>
+              </div>
+              <div class="skill-box">
+                <img
+                  class="cup-img"
+                  src="./assets/images/cup.webp"
+                  alt="React"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="skill-icon">
+                  <img src="./assets/icons/linux-original.svg" alt="Git/Github">
+                </div>
+                <div class="skill-title">Linux</div>
               </div>
             </div>
           </div>
@@ -803,8 +799,6 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
-    <!-- javascript -->
-    <script src="js/main.js" defer></script>
     <!-- aos -->
     <script src="js/aos.js" defer></script>
     <script src="js/java.js" defer></script>
@@ -815,14 +809,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <!-- owl -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      defer
-    ></script>
+ 
     <!--  Script -->
     <script type="text/javascript" defer>
       const yearRange = document.getElementById("year-range");
@@ -831,16 +818,18 @@
       yearRange.innerHTML = `${startYear}-${currentYear}`;
       document.addEventListener("DOMContentLoaded", function () {
         $(document).ready(function () {
-          // Function to remove sidebar image on phones
-          function removeSidebarImageOnPhone() {
+          // Function to handle sidebar image visibility
+          function handleSidebarImageVisibility() {
             var screenWidth = $(window).width();
             if (screenWidth <= 768) {
-              $("#sidebar-img").remove();
+              $("#sidebar-img").hide();
+            } else {
+              $("#sidebar-img").show();
             }
           }
           // Call the function on document ready and window resize
-          removeSidebarImageOnPhone();
-          $(window).resize(removeSidebarImageOnPhone);
+          handleSidebarImageVisibility();
+          $(window).resize(handleSidebarImageVisibility);
         });
         document.onclick = function () {
           $(".navbar-collapse").collapse("hide");
