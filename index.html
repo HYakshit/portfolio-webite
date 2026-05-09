@@ -160,45 +160,37 @@
       <section id="home" class="full-height px-lg-5">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-7 d-none d-md-block col-12">
+            <!-- Text Content -->
+            <div class="col-md-6 col-12 text-center text-md-start mb-5 mb-md-0" data-aos="fade-right">
+              <h2 class="text-white fw-light mb-2">Hello, I'm</h2>
+              <h1 class="orange fw-bold display-4 mb-3">Akshit Mahajan</h1>
+              <h3 class="text-white fw-light mb-4" style="font-size: 1.5rem;">Full-Stack Web Developer</h3>
+              <p class="text-light mb-4 fs-5 opacity-75">Building scalable web applications and intuitive digital experiences.</p>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-3 mt-4">
+                <a href="#contact" class="btn btn-coffe btn-lg shadow-sm rounded-pill px-4 py-2">
+                  Get in Touch <i class="fa-solid fa-paper-plane ms-2"></i>
+                </a>
+                <a href="https://akshit-for-business.netlify.app/" target="_blank" class="btn btn-outline-light btn-lg shadow-sm rounded-pill px-4 py-2">
+                  View Services <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Image Content -->
+            <div class="col-md-6 col-12 text-center" data-aos="fade-left">
               <img
                 src="images/home.gif"
-                class="img-fluid rounded-circle"
-                alt="..."
-                width="480"
-                height="360"
+                class="img-fluid rounded-circle hero-img d-none d-md-inline-block"
+                alt="Akshit Mahajan"
+                style="width: 420px; height: 420px; object-fit: cover;"
                 fetchpriority="high"
               />
-            </div>
-            <!-- my img in mobile -->
-            <div class="col-md-7 d-block d-md-none col-12">
               <img
                 src="images/akshit_sidebar.jpg"
-                class="img-fluid rounded-circle"
-                alt="..."
-                width="480"
-                height="360"
+                class="img-fluid rounded-circle hero-img d-md-none"
+                alt="Akshit Mahajan"
+                style="width: 280px; height: 280px; object-fit: cover;"
                 fetchpriority="high"
               />
-            </div>
-            <div class="col-md-5 col-12">
-              <h2>Hii</h2>
-              <h2>This is</h2>
-              <h1 class="orange mb-5">Akshit Mahajan</h1>
-              <p>
-                <a href="#contact" class="link-custom"
-                  ><i class="fa-solid fa-link"></i> Get in touch</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://akshit-for-business.netlify.app/"
-                  class="link-custom"
-                  target="_blank"
-                  ><i class="fa-solid fa-up-right-from-square"></i> View
-                  services</a
-                >
-              </p>
             </div>
           </div>
         </div>
@@ -299,198 +291,81 @@
           </div>
           <div class="row gy-4 justify-content-center">
             <!-- 1 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="assets/images/fruit-cream.webp"
-                  class="img-fluid project-img"
-                  alt="Landing Page for fruit cream business"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">website for business</h4>
-                <p class="project-description">
-                  Developed a website as a freelancer with high page performance
-                  in React.
-                </p>
-                <a
-                  href="https://minisfruitcream.netlify.app/"
-                  target="_blank"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="assets/images/fruit-cream.webp" class="w-100 project-img" alt="Landing Page for fruit cream business" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">Website for Business</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">Developed a website as a freelancer with high page performance in React.</p>
+                  <a href="https://minisfruitcream.netlify.app/" target="_blank" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
               </div>
             </div>
             <!-- 2 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="assets/images/notes.png"
-                  class="img-fluid project-img"
-                  alt="Calculator Application"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">Notes Website</h4>
-                <p class="project-description">
-                  Full Stack Notes website using MERN stack with auth and CRUD
-                  operations.
-                </p>
-                <a
-                  href="https://mycloudnotes.netlify.app/"
-                  target="_blank"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="assets/images/notes.png" class="w-100 project-img" alt="Notes Website" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">Notes Website</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">Full Stack Notes website using MERN stack with auth and CRUD operations.</p>
+                  <a href="https://mycloudnotes.netlify.app/" target="_blank" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i> View Project</a>
+                </div>
               </div>
             </div>
             <!-- 3 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="assets/images/workflow.png"
-                  class="img-fluid project-img"
-                  alt="Calculator Application"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">workflow Maker</h4>
-                <p class="project-description">
-                  Working on interactive Workflow Builder web app using React
-                  Flow.
-                </p>
-                <a
-                  href="https://akshit-react-flow.netlify.app/"
-                  target="_blank"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="assets/images/workflow.png" class="w-100 project-img" alt="Workflow Maker" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">Workflow Maker</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">Working on interactive Workflow Builder web app using React Flow.</p>
+                  <a href="https://akshit-react-flow.netlify.app/" target="_blank" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i> View Project</a>
+                </div>
               </div>
             </div>
             <!-- 4 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="images/tick-tack.png"
-                  class="img-fluid project-img"
-                  alt="Calculator Application"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">React Tic-Tack-Toe</h4>
-                <p class="project-description">
-                  I developed a Tic-Tac-Toe application as part of my React.js
-                  learning journey.
-                </p>
-                <a
-                  href="https://akshit-tic-tac-toe-react.netlify.app/"
-                  target="_blank"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="images/tick-tack.png" class="w-100 project-img" alt="React Tic-Tac-Toe" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">React Tic-Tac-Toe</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">I developed a Tic-Tac-Toe application as part of my React.js learning journey.</p>
+                  <a href="https://akshit-tic-tac-toe-react.netlify.app/" target="_blank" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i> View Project</a>
+                </div>
               </div>
             </div>
             <!-- 5 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="images/project1.png"
-                  class="img-fluid project-img"
-                  alt="Calculator Application"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">Calculator Application</h4>
-                <p class="project-description">
-                  Calculator application in java using Android Studio IDE.
-                </p>
-                <a
-                  href="https://drive.google.com/file/d/11UPpL1JoOwU6YGJ-3IvQ-JsJiLaAiKkj/view?usp=drive_link"
-                  target="_blank"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="images/project1.png" class="w-100 project-img" alt="Calculator Application" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">Calculator App</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">Calculator application built in Java using Android Studio IDE.</p>
+                  <a href="https://drive.google.com/file/d/11UPpL1JoOwU6YGJ-3IvQ-JsJiLaAiKkj/view?usp=drive_link" target="_blank" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
               </div>
             </div>
             <!-- 6 -->
-            <div
-              class="col-12 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div
-                class="bg-base project-box p-4 text-center rounded-4 shadow-effect"
-              >
-                <img
-                  src="images/project2.jpg"
-                  class="img-fluid project-img"
-                  alt="E-Commerce website"
-                  width="292"
-                  height="292"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h4 class="project-title mt-1">E-Commerce website</h4>
-                <p class="project-description">
-                  Front-end of E-commerce website using bootstrap.
-                </p>
-                <a
-                  href="https://github.com/HYakshit/"
-                  class="btn btn-coffe project-link"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i> View
-                  Project</a
-                >
+            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base project-box rounded-4 shadow-effect d-flex flex-column h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                  <img src="images/project2.jpg" class="w-100 project-img" alt="E-Commerce Website" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1 text-start">
+                  <h4 class="project-title fw-bold">E-Commerce UI</h4>
+                  <p class="project-description text-muted flex-grow-1 mb-4">Front-end of an E-commerce website using Bootstrap.</p>
+                  <a href="https://github.com/HYakshit/" class="btn btn-coffe mt-auto align-self-start rounded-pill px-4 shadow-sm" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i> View Project</a>
+                </div>
               </div>
             </div>
           </div>
@@ -721,30 +596,42 @@
       <!-- Education -->
       <section id="education" class="education full-height px-lg-5">
         <div class="container">
-          <div class="row pb-4" data-aos="fade-up">
+          <div class="row pb-5" data-aos="fade-up">
             <h2 class="heading">Education</h2>
-            <h3>My Education & Experience</h3>
+            <h3>My Academic Journey</h3>
           </div>
-          <div class="row gy-4">
+          <div class="row gy-4 position-relative">
+            <!-- Timeline line -->
+            <div class="d-none d-lg-block position-absolute top-50 start-0 translate-middle-y w-100" style="height: 4px; background-color: var(--color-border); z-index: 0; opacity: 0.5;"></div>
+            
             <div class="col-md-4" data-aos="fade-up">
-              <div class="bg-base edu-box p-4 rounded-4 shadow-effect">
-                <h4>MCA</h4>
-                <p class="mb-2">Lovely Professional University</p>
-                <p class="mb-0">Pursing</p>
+              <div class="bg-base edu-box p-4 rounded-4 shadow-effect text-center position-relative h-100 d-flex flex-column justify-content-center">
+                <div class="edu-icon mb-3">
+                  <i class="fa-solid fa-graduation-cap fa-2x orange"></i>
+                </div>
+                <h4 class="fw-bold">MCA</h4>
+                <p class="mb-3 text-muted">Lovely Professional University</p>
+                <span class="badge bg-coffe rounded-pill mx-auto px-3 py-2 mt-auto">Pursuing</span>
               </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="bg-base edu-box p-4 rounded-4 shadow-effect">
-                <h4>Bsc(IT)</h4>
-                <p class="mb-2">Guru Nanak Dev University Amritsar</p>
-                <p class="mb-0">Division: First</p>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-base edu-box p-4 rounded-4 shadow-effect text-center position-relative h-100 d-flex flex-column justify-content-center">
+                <div class="edu-icon mb-3">
+                  <i class="fa-solid fa-university fa-2x orange"></i>
+                </div>
+                <h4 class="fw-bold">Bsc (IT)</h4>
+                <p class="mb-3 text-muted">Guru Nanak Dev University Amritsar</p>
+                <span class="badge bg-coffe rounded-pill mx-auto px-3 py-2 mt-auto">Division: First</span>
               </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="bg-base edu-box p-4 rounded-4 shadow-effect">
-                <h4>Senior Secondary</h4>
-                <p class="mb-2">Ajit Vidyalaya SEN SEC School</p>
-                <p class="mb-0">Percentage: 75%</p>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-base edu-box p-4 rounded-4 shadow-effect text-center position-relative h-100 d-flex flex-column justify-content-center">
+                <div class="edu-icon mb-3">
+                  <i class="fa-solid fa-school fa-2x orange"></i>
+                </div>
+                <h4 class="fw-bold">Senior Secondary</h4>
+                <p class="mb-3 text-muted">Ajit Vidyalaya SEN SEC School</p>
+                <span class="badge bg-coffe rounded-pill mx-auto px-3 py-2 mt-auto">Percentage: 75%</span>
               </div>
             </div>
           </div>
